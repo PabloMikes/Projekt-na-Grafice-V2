@@ -1,19 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projekt na grafice V2</title>
-    <link rel="stylesheet" href="./res/css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wasted Hero</title>
+    <link rel="stylesheet" href="./res/css/style.css" />
+  </head>
+  
+  <body>
     <div id="menu">
-        <button class="menuButton">Start</button>
-        <button class="menuButton">Settings</button>
-        <button class="menuButton">Load</button>
+      <button class="menuButton">Start</button>
+      <button class="menuButton">Load</button>
     </div>
-    
+    <div id="startMenu">
+      <p>Choose your name:</p>
+      <div>
+        <input type="text" id="input" />
+        <button id="select">Confirm</button>
+      </div>
+    </div>
+    <div id="statsMenu">
+      <div>
+        <p id="point">Points: 10</p>
+        <div>
+          <button class="add">+</button>
+          <button class="unadd">-</button>
+          <p class="upgrade">Strenght 1</p>
+        </div>
+        <div>
+          <button class="add">+</button>
+          <button class="unadd">-</button>
+          <p class="upgrade">Vitality 1</p>
+        </div>
+        <div>
+          <button class="add">+</button>
+          <button class="unadd">-</button>
+          <p class="upgrade">Luck 1</p>
+        </div>
+        <div>
+          <button class="add">+</button>
+          <button class="unadd">-</button>
+          <p class="upgrade">Intelligence 1</p>
+        </div>
+        <div>
+          <button class="add">+</button>
+          <button class="unadd">-</button>
+          <p class="upgrade">Charisma 1</p>
+        </div>
+        <div>
+          <button class="add">+</button>
+          <button class="unadd">-</button>
+          <p class="upgrade">Agility 1</p>
+        </div>
+        <button id="select2">Confirm</button>
+      </div>
+      <div id="character">
+        *Obrazek*
+    </div>
+    </div>
     <script src="./res/js/main.js"></script>
-</body>
+  </body>
 </html>

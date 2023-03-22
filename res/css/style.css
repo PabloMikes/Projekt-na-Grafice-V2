@@ -1,5 +1,11 @@
+*{
+    user-select: none;
+    overflow: hidden;
+}
 body{
-    background-color: bisque;
+    background: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .menuButton{
     width: 300px;
@@ -14,4 +20,53 @@ body{
     width: 100%;
     justify-content: center;
     align-items: center;
+}
+#startMenu{
+    flex-direction: column;
+    height: 98vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    font-size: 35px;
+}
+input{
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+}
+#startMenu button{
+    width: 70px;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+#statsMenu{
+    height: 98vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+#statsMenu div div{
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+#statsMenu div div button{
+    height: 25px;
+    margin-right: 20px;
+    width: 25px;
+}
+.upgrade{
+    font-size: 25px;
+}
+#point{
+    font-size: 35px;
+}
+#select2{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
 }
