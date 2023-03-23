@@ -7,4 +7,4 @@
 <p>+ Story</p>
 <p>+ Addiction</p>
 <p>- Sanity</p>
-<p>! Still no gameplay</p>
+<p>* Still no gameplay</p>
