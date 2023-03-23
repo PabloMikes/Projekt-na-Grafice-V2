@@ -126,7 +126,7 @@ add[5].addEventListener("click", () =>{
     }
 })
 unadd[5].addEventListener("click", () =>{
-    if(Charisma > 1){
+    if(Agility > 1){
         Agility--;
         points++;
         upgrade[5].innerHTML = `Agility ${Agility}`;
