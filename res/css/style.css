@@ -127,8 +127,53 @@ p{
 }
 #lore button{
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 20vh;
+    right: 15vw;
     width: 10vw;
     height: 5vh;
+    cursor: pointer;
+}
+.scene{
+    display: none;
+}
+.scene img:first-child{
+    position: absolute;
+    top: 45vh;
+    left: 58vw;
+    height: 20vh;
+}
+.scene img:nth-child(4){
+    position: absolute;
+    top: 45vh;
+    left: 68vw;
+    height: 20vh;
+}
+.next{
+    position: absolute;
+    width: 10vw;
+    height: 15vh;
+    bottom: 2vh;
+    right: 1vw;
+    font-size: 6vh;
+}
+.text{
+    width: 100%;
+    height: 20vh;
+    background-color: bisque;
+    position: absolute;
+    bottom: 0;
+    font-size: 5vh;
+}
+.scene img:nth-child(2){
+    position: absolute;
+    bottom: -25vh;
+    height: 68vh;
+    display: none;
+}
+.scene img:nth-child(3){
+    position: absolute;
+    bottom: -25vh;
+    height: 68vh;
+    right: 0;
+    display: none;
 }
