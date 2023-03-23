@@ -100,3 +100,30 @@ p{
     width: 30%;
     height: 95%;
 }
+#lore{
+    display: none;
+}
+#lore img{
+    position: absolute;
+    z-index: -1;
+    height: 50vh;
+    width: 50vw;
+    bottom: 0;
+    left: 24%;
+}
+#lore p{
+    bottom: 5vh;
+    left: 33vw;
+    position: absolute;
+    width: 35vw;
+    height: 30vh;
+    font-size: 3vh;
+    text-align: center;
+}
+#lore button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10vw;
+    height: 5vh;
+}

@@ -9,6 +9,9 @@ const startMenu = document.getElementById("startMenu");
 const statsMenu = document.getElementById("statsMenu");
 const input = document.getElementById("input");
 const select = document.getElementById("select");
+const logo = document.getElementById("logo");
+const lore = document.getElementById("lore");
+const body = document.getElementsByTagName("body")[0];
 
 let points = 10;
 
@@ -137,5 +140,10 @@ unadd[5].addEventListener("click", () =>{
 select2.addEventListener("click", () =>{
     if(points == 0){
         statsMenu.style.display = "none";
+        body.style.background = "url(./res/img/blurred.png)";
+        body.style.backgroundRepeat = "no-repeat";
+        body.style.backgroundSize = "cover";
+        logo.style.display = "none";
+        lore.style.display = "block";
     }
 })
