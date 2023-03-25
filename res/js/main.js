@@ -11,10 +11,14 @@ const input = document.getElementById("input");
 const select = document.getElementById("select");
 const logo = document.getElementById("logo");
 const lore = document.getElementById("lore");
+const mapaButton = document.getElementById("mapaButton");
+const stuff = document.getElementById("stuff");
+const map = document.getElementById("map");
 const Continue = document.getElementById("continue");
 const scene = document.getElementsByClassName("scene");
 const text = document.getElementsByClassName("text");
 const next = document.getElementsByClassName("next");
+const obal = document.getElementsByClassName("obal");
 const talkin = document.getElementsByClassName("talkin");
 const npc = document.getElementsByClassName("npc");
 const body = document.getElementsByTagName("body")[0];
@@ -160,8 +164,8 @@ Continue.addEventListener("click", () => {
   body.style.backgroundSize = "cover";
   lore.style.display = "none";
   scene[0].style.display = "block";
-  text[0].innerHTML = `Sup white nigga`;
-  talkin[1].style.display = "block";
+  text[0].innerHTML = `Hey Ava, what's up?`;
+  talkin[0].style.display = "block";
 });
 
 let x = 0;
@@ -169,39 +173,78 @@ let x = 0;
 next[0].addEventListener("click", () => {
   switch (x) {
     case 0:
-      text[0].innerHTML = `Sup monkey`;
-      talkin[0].style.display = "block";
-      talkin[1].style.display = "none";
+      text[0].innerHTML = `Hi there. I have a request for you. I need you to head over to 
+      Terminus and see if it's safe to stay there for a few days.`;
+      talkin[1].style.display = "block";
+      talkin[0].style.display = "none";
       x++;
       break;
     case 1:
-      text[0].innerHTML = `I ned sum help`;
-      talkin[0].style.display = "none";
-      talkin[1].style.display = "block";
+      text[0].innerHTML = `Sure thing. Is there anything else you need me to do while I'm there?`;
+      talkin[1].style.display = "none";
+      talkin[0].style.display = "block";
       x++;
       break;
     case 2:
-      text[0].innerHTML = `Ok what ya need`;
-      talkin[0].style.display = "block";
-      talkin[1].style.display = "none";
+      text[0].innerHTML = `Actually, yes. One more thing. Here, take this revolver ammo and The Lawbringer. 
+      You might need it in Terminus.`;
+      talkin[1].style.display = "block";
+      talkin[0].style.display = "none";
       x++;
       break;
     case 3:
-      text[0].innerHTML = `Go check out Terminus for sum info`;
-      talkin[0].style.display = "none";
-      talkin[1].style.display = "block";
+      text[0].innerHTML = `Thanks, Ava. I appreciate it.`;
+      talkin[1].style.display = "none";
+      talkin[0].style.display = "block";
       x++;
       break;
     case 4:
-      text[0].innerHTML = `Ok`;
-      talkin[0].style.display = "block";
-      talkin[1].style.display = "none";
+      text[0].innerHTML = `No problem. Just be careful out there. We don't know what's waiting for you in Terminus.`;
+      talkin[1].style.display = "block";
+      talkin[0].style.display = "none";
       x++;
       break;
     case 5:
+      text[0].innerHTML = `I'll keep that in mind. Anything else?`;
+      talkin[1].style.display = "none";
+      talkin[0].style.display = "block";
+      x++;
+      break;
+    case 6:
+      text[0].innerHTML = `That's all for now. Good luck, and stay safe.`;
+      talkin[1].style.display = "block";
       talkin[0].style.display = "none";
-      text[0].style.display = "none";
-      next[0].style.display = "none";
+      x++;
+      break;
+    case 7:
+      text[0].innerHTML = `Thanks, Ava. I'll let you know how it goes.`;
+      talkin[1].style.display = "none";
+      talkin[0].style.display = "block";
+      x++;
+      break;
+    case 8:
+      text[0].innerHTML = `Farewell, and good luck out there.`;
+      talkin[1].style.display = "block";
+      talkin[0].style.display = "none";
+      x++;
+      break;
+    default:
+      talkin[1].style.display = "none";
+      obal[0].style.display = "none";
       npc[1].style.top = "75vh";
+      stuff.style.display = "block";
   }
 });
+
+let openMap = false;
+
+mapaButton.addEventListener("click", () =>{
+  if(!openMap){
+    map.style.display = "block";
+    openMap = true;
+  }
+  else{
+    map.style.display = "none";
+    openMap = false;
+  }
+})

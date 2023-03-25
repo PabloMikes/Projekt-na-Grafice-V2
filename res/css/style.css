@@ -136,6 +136,14 @@ p{
 .scene{
     display: none;
 }
+.scene div:nth-child(5){
+    height: 20vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: bisque;
+    width: 100vw;
+}
 .scene img:first-child{
     position: absolute;
     top: 45vh;
@@ -157,9 +165,8 @@ p{
     font-size: 6vh;
 }
 .text{
-    width: 100%;
+    width: 87%;
     height: 20vh;
-    background-color: bisque;
     position: absolute;
     bottom: 0;
     font-size: 5vh;
@@ -168,6 +175,7 @@ p{
     position: absolute;
     bottom: -25vh;
     height: 68vh;
+    left: 2vw;
     display: none;
 }
 .scene img:nth-child(3){
@@ -176,4 +184,24 @@ p{
     height: 68vh;
     right: 0;
     display: none;
+}
+#stuff{
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+    display: none;
+}
+#stuff img{
+    height: 3vh;
+    width: 1.5vw;
+}
+#map{
+    position: absolute;
+    top: 0;
+    left: 10vw;
+    display: none;
+}
+#map img{
+    height: 100vh;
+    width: 80vw;
 }
